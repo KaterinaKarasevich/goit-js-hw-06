@@ -13,7 +13,8 @@ function onFormSubmit(event) {
         alert("Все поля должны быть заполнены.")
         
     } else {
-        console.log(`Email: ${email.value}, Password: ${password.value}`)
+        const userContacts = { Email: email.value, Password: password.value }
+        console.log(userContacts)
     }
 
 loginForm.reset();
